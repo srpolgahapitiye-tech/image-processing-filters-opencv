@@ -36,9 +36,9 @@ X, Y = np.meshgrid(x, y)
 D2 = (X - ccol)**2 + (Y - crow)**2
 
 # Parameters (IMPORTANT)
-gamma_l = 0.5   # suppress illumination
-gamma_h = 2.5   # enhance reflectance
-sigma = 100      # control cutoff (increase if too dark)
+gamma_l = 0.7   # suppress illumination
+gamma_h = 1.5   # enhance reflectance
+sigma = 120      # control cutoff (increase if too dark)
 
 # Homomorphic filter
 H = (gamma_h - gamma_l) * (1 - np.exp(-D2 / (2 * sigma**2))) + gamma_l
