@@ -2,9 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-# -----------------------------
 # FUNCTIONS
-# -----------------------------
 def zoom_nearest(img, new_h, new_w):
     h, w = img.shape
     scale_x = new_h / h
@@ -57,9 +55,7 @@ def compute_ssd(img1, img2):
     return np.sum((img1.astype(np.float32) - img2.astype(np.float32))**2)
 
 
-# -----------------------------
-# IMAGE PAIRS
-# -----------------------------
+# IMAGE PAIRS - SMALL TO LARGE (remove comments to test more pairs)
 pairs = [
     #("q8images/im01small.png", "q8images/im01.png"),
     #("q8images/im02small.png", "q8images/im02.png"),
