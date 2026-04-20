@@ -1,3 +1,3 @@
 git add .
-git commit -m "message"
+git commit -m "Assignment1 and 2 doneA"
 git push
